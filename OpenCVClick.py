@@ -51,7 +51,7 @@ def find_image(imgName):
     return twidth,theight, mn_val, max_val, min_loc, max_loc
 
 #事先读取按钮截图
-imgName = input("请输入图片名字：")
+imgName = input("请输入设置图片名字：")
 twidth,theight,mn_val, max_val, min_loc, max_loc  = find_image(imgName)
 if(max_val>=0.9):
     top_left = max_loc
